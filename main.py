@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from задание1_model_orm import Publisher, Book, Stock, Shop, Sale
 
-DSN = 'postgresql://postgres:u7f6WRNy.*i+h$p@localhost:5432/orm_db'
+DSN = 'postgresql://postgres:PASSWORD@localhost:5432/orm_db'
 engine = sq.create_engine(DSN)
 
 Session = sessionmaker(bind=engine)
